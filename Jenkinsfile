@@ -1,5 +1,10 @@
 // This adds install and test stages before static code analysis
 pipeline {
+  environment {
+    registry = "devgrewal01/vatcal"
+        registryCredentials = "dockerhub_id"
+        dockerImage = ""
+  }
   agent any
 
   stages {
@@ -34,5 +39,24 @@ pipeline {
           }
         }
     }
+                stage ('Build Docker Image'){
+                steps{
+                    script {
+                        dockerImage = docker.build(registry)
+                    }
+                }
+            }
+
+            stage ("Push to Docker Hub"){
+                steps {
+                    script {
+                        docker.withRegistry('', registryCredentials) {
+                            dockerImage.push("${env.BUILD_NUMBER}")
+                            dockerImage.push("latest")
+                        }
+                    }
+                }
+            }
+
   }
 }
