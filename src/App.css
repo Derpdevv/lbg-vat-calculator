@@ -4,16 +4,16 @@
 }
 
 .colour-border{
-  border: auto solid whitesmoke;
+  border: 75pc solid whitesmoke;
   padding: 10px;
 }
 
 .transparent {
-  background-color: class="p-3 mb-2 bg-dark text-white";
+  background-color: rgb(72, 195, 226);
 }
 
 .original {
-  background-color: rgba(255, 92, 53);
+  background-color: rgb(72, 87, 226);
 }
 
  /*Additional Styling*/
@@ -26,6 +26,7 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  color: aliceblue;
 }
 
 div { 
