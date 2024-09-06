@@ -4,7 +4,7 @@
 }
 
 .colour-border{
-  border: 3px solid whitesmoke;
+  border: auto solid whitesmoke;
   padding: 10px;
 }
 
@@ -21,8 +21,7 @@
 body {
   width: 800px; 
   padding-top: 30px;
-  /* background-image: url("https://as2.ftcdn.net/v2/jpg/05/70/54/07/1000_F_570540765_EkBpTlLYkqHbzYxSYmv4CE1q7K7bqgOj.jpg"); */
-  background-image: var(--bs-gradient);
+  background-image: url("https://as2.ftcdn.net/v2/jpg/05/70/54/07/1000_F_570540765_EkBpTlLYkqHbzYxSYmv4CE1q7K7bqgOj.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
