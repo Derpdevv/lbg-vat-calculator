@@ -9,7 +9,7 @@
 }
 
 .transparent {
-  background-color: rgba(255, 92, 53, 0.75);
+  background-color: class="p-3 mb-2 bg-dark text-white";
 }
 
 .original {
@@ -21,7 +21,8 @@
 body {
   width: 800px; 
   padding-top: 30px;
-  background-image: url("https://assets.codepen.io/6093409/mountain-field.jpg");
+  /* background-image: url("https://as2.ftcdn.net/v2/jpg/05/70/54/07/1000_F_570540765_EkBpTlLYkqHbzYxSYmv4CE1q7K7bqgOj.jpg"); */
+  background-image: var(--bs-gradient);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
