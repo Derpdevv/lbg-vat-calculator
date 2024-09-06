@@ -33,7 +33,7 @@ div {
   height: 20px;
   width: 50px;
   margin: auto;
-  padding: 20px; 
+  padding: -10px; 
 }
 
 .header{
